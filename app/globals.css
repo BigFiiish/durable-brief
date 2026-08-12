@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+:root {
+  --chrome: #0e0d0b;
+  --ink: #16130f;
+  --paper: #f3eee4;
+  --paper-2: #eae3d6;
+  --rule: #d4cbbd;
+  --muted: #6f675c;
+  --ember: #c45c26;
+  --moss: #2f5d45;
+  --gold: #9a7b3c;
+  --danger: #8f2d2d;
+}
+
+@theme inline {
+  --color-chrome: var(--chrome);
+  --color-ink: var(--ink);
+  --color-paper: var(--paper);
+  --color-paper-2: var(--paper-2);
+  --color-rule: var(--rule);
+  --color-muted: var(--muted);
+  --color-ember: var(--ember);
+  --color-moss: var(--moss);
+  --color-gold: var(--gold);
+  --color-danger: var(--danger);
+  --font-sans: var(--font-geist-sans);
+  --font-serif: var(--font-instrument);
+  --font-mono: var(--font-ibm);
+}
+
+html,
+body {
+  background: var(--chrome);
+  color: var(--paper);
+}
+
+body {
+  font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+}
+
+::selection {
+  background: var(--ember);
+  color: var(--paper);
+}
