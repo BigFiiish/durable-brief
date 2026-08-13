@@ -8,6 +8,8 @@ Built with the [Workflow SDK](https://workflow-sdk.dev) (`'use workflow'` / `'us
 
 This is the project I would put in front of the [Vercel Workflows](https://vercel.com/careers/software-engineer-workflows-5798416004) team: the patterns in the job post, written as TypeScript control flow.
 
+**Live:** [durable-brief.vercel.app](https://durable-brief.vercel.app)
+
 ![Durable Brief desk paused on the human approval hook](docs/desk.png)
 
 ## Why this exists
@@ -81,7 +83,7 @@ Set `DEMO_MODE=0` if you want to force live calls while a key is present. Defaul
 
 ## Deploy
 
-[Vercel](https://vercel.com) is the intended production world. Workflows need no extra config beyond `withWorkflow()` in `next.config.ts`. Set `OPENAI_API_KEY` or `AI_GATEWAY_API_KEY` on the project.
+Production is at [durable-brief.vercel.app](https://durable-brief.vercel.app). Workflows need no extra config beyond `withWorkflow()` in `next.config.ts`. Set `OPENAI_API_KEY` or `AI_GATEWAY_API_KEY` on the project for live models.
 
 ## License
 
